@@ -47,7 +47,7 @@
 
     <div id="form-messages"></div>
 
-   <div class="col-md-8 col-xs-8">
+   <div class="col-md-8 col-xs-8" style="border-right:3px solid #efefef;">
      <p style="font-size:18px;margin-bottom:10px;">
        For more information on our program, please contact us using the form below. We will be happy to discuss how our program can work for you.
      </p>
@@ -91,8 +91,15 @@
 
    </div>
    
-   <div class="col-md-4 col-xs-4" style="background:#efefef;">
-
+   <div class="col-md-4 col-xs-4">
+     <div id="map" style="margin-top:60px;margin-left:20px;width:280px;background:#efefef;height:300px;">
+     </div>
+     <div style="margin-left:20px;margin-top:20px;">
+       We are conveniently located at Nashoba Valley Olympia Ice Rink in Boxborough, MA just a few miles from I-495. <br><br>
+       Nashoba Valley Olympia<br>
+       34 Massachusetts Ave.<br>
+       Boxborough, MA 01719
+       </div>
    </div>
 
   </div>
@@ -118,6 +125,26 @@
 <div class="footer-wrap">
 &copy; 2017 SkateKostin International
 </div>
+
+
+
+<script type="text/javascript">
+      function initMap() {
+        var rink = {lat: 42.4771574, lng: -71.4918};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: rink
+        });
+        var marker = new google.maps.Marker({
+          position: rink,
+          map: map
+        });
+      }
+    </script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJJNydefxEjwaeLMU6lyFmYOf34y5lXv0&callback=initMap">
+    </script>
 
 </body>
 </html>
