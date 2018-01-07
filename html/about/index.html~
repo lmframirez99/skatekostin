@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>SkateKostin International</title>
+
+<link rel="shortcut icon" href="https://s3.us-east-2.amazonaws.com/ksi-images/home/favicon_square.png" type="image/x-icon"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="header-sub">
+    <div class="logo">
+      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg" height="80px;" width="280px;">
+    </div>
+
+    <div class="menus-subpages" id="menusSubpages" style="background: #fff;">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/" class="active no-hover">About</a></li>
+        <li><a href="../team/">Our Team</a></li>
+        <li><a href="../program/">Our Program</a></li>
+        <li><a href="../news/">News & Updates</a></li>
+        <li><a href="../contact/" class="contact contact-hover no-hover">Contact Us</a></li>
+	<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner-about">
+  <div class="tag-line1-contentpage">Experience. Vision. Results.</div><br><br>
+</div>
+
+<div class="container-fluid">
+  <div class="content-block">
+
+   <div class="col-md-12 col-xs-12">
+   <div style="background:#efefef;height:70px;width:100%;text-align:center;margin-bottom:30px;">
+     <h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Our Mission and Vision</h3>
+   </div>
+   </div>
+
+    <div class="col-md-12 col-xs-12">
+      <div class="col-md-8 col-xs-8" style="font-size:14px;line-height:1.8em;text-align:justify;">
+	Our vision is to provide a well-structured and rigorous training program that enables the development of a fierce competitive mindset in our athletes leading to achievement of goals for skaters of all levels from beginners to champions at the elite level. Our team consists of professionals with specialties in all areas of figure skating who have a passion for the sport that they share with their athletes. 
+      </div>
+    </div>
+
+    <div style="clear:both;margin-bottom:60px;"></div>
+
+   <div class="col-md-12 col-xs-12">
+   <div style="background:#efefef;height:70px;width:100%;text-align:center;margin-bottom:30px;">
+     <h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Why Choose SkateKostin?</h3>
+   </div>
+   </div>
+
+    <div class="col-md-12 col-xs-12">
+      <div class="col-md-8 col-xs-8" style="font-size:14px;line-height:1.8em;text-align:justify;">
+	The SkateKostin International program offerings are designed to provide the most effective coaching model for developing highly successful skaters. Each skater receives individualized instruction as well as group instruction to maximize their on and off-ice development as well as their time and budget. Families can be confident that as part of the SkateKostin team their skater will be encouraged and motivated each day to reach their personal goals. 
+      </div>
+    </div>
+
+
+    <div class="col-md-12 col-xs-12">
+
+
+    </div>
+
+  </div>
+</div>
+
+<div style="clear: both;margin-bottom:40px;"></div>
+
+
+<div style="background:#ddd;height:80px;">
+  <div style="text-align:center;padding-top:16px;">
+  <a class="btn btn-social-icon btn-instagram" href="http://www.instagram.com/skatekostin" target="_blank"><span class="fa fa-instagram" style="font-size:30px;color:#c02630;"></span></a>
+  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/skatekostin" target="_blank"><span class="fa fa-facebook" style="font-size:24px;color:#c02630;"></span></a>
+  </div>
+</div>
+
+
+
+<div class="footer-wrap">
+&copy; 2017 SkateKostin International
+</div>
+
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("menusSubpages");
+    if (x.className === "menus-subpages") {
+        x.className += " responsive";
+    } else {
+        x.className = "menus-subpages";
+    }
+}
+</script>

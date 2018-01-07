@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>SkateKostin International</title>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/site.css">
+
+<style>
+ ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  li{
+    float: left;
+    padding: 20 0 20 20px;
+  }
+
+  li a{
+    display: block;
+    color: #a03a3a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  li a:hover{
+    background-color: #fff;
+    color: #dd0a19
+  }
+
+  li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+  <div style="float:right;margin-top:4px;">
+    <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SkateKostinIntBlade_Small.png" height="110px;" width="320px;">
+  </div>
+</div>
+
+
+<div class="navbar-sk">
+  <ul>
+    <li><a href="skatekostin.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="/team/">Our Team</a></li>
+    <li><a href="/method/">Program</a></li>
+    <li><a href="/results/">Results</a></li>
+    <li><a href="/contact/">Contact Us</a></li>
+  </ul>
+</div>
+
+
+<div class="banner-home">
+  <div class="tag-line1">Inspiring Skaters. Building Athletes.</div><br><br>
+  <div class="tag-line2">excellence on ice through progressive vision</div>
+
+</div>
+
+<div class="content">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod mauris sit amet aliquam convallis. Phasellus in aliquam urna. Donec mollis, ex eget ornare laoreet, nibh velit consequat est, vitae lacinia lorem leo ut sapien. Nullam id neque magna. Aliquam ut magna eget lectus ultricies fermentum nec et sem. Integer rutrum rhoncus erat vel dictum. Pellentesque pulvinar, odio eu dignissim feugiat, mi eros rutrum orci, vel iaculis velit turpis id libero. Sed quis ullamcorper mauris. </p>
+
+<p>Mauris id mi a ante rhoncus condimentum. Sed sed ex auctor, maximus ligula malesuada, mattis nunc. Suspendisse laoreet magna vitae sollicitudin rhoncus. Ut ornare mollis ligula, scelerisque consequat lacus iaculis quis.</p>
+</div>
+
+<div class="footer-wrap">
+&copy; Skate Kostin International
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>SkateKostin International | Contact Us</title>
+
+<link rel="shortcut icon" href="https://s3.us-east-2.amazonaws.com/ksi-images/home/favicon_square.png" type="image/x-icon"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="header-sub">
+    <div class="logo">
+      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg" height="80px;" width="280px;">
+    </div>
+
+    <div class="menus-subpages" style="background: #fff;">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../team/">Our Team</a></li>
+        <li><a href="../program/">Our Program</a></li>
+        <li><a href="../news/">News & Updates</a></li>
+        <li><a href="../contact/" class="contact active contact-hover no-hover">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner-contact">
+</div>
+
+<div style="clear: both;margin-bottom:20px;">
+</div>
+
+
+<div class="container-fluid">
+  <div class="content-block">
+
+    <div id="form-messages"></div>
+
+   <div class="col-md-8 col-xs-8">
+     <p style="font-size:18px;margin-bottom:10px;">
+       For more information on our program, please contact us using the form below. We will be happy to discuss how our program can work for you.
+     </p>
+     <form id="ajax-contact" action="mailer.php" method="post">
+       <div class="row" style="margin-bottom:20px;">
+	 <div class="col-md-6"><label class="form-group">Your Name:</label><input type="text" class="form-control" placeholder="Your name" id="contact_name"></div>
+       </div>
+       <div class="row" style="margin-bottom:20px;">
+	 <div class="col-md-6"><label class="form-group">Email Address:</label><input type="text" class="form-control" placeholder="Your name" id="contact_email"></div>
+	 </div>
+       <div class="row" style="margin-bottom:20px;">
+	 <div class="col-md-6"><label class="form-group">Phone Number:</label><input type="text" class="form-control" placeholder="Your name" id="phone_number"></div>
+	 </div>
+       <div class="row" style="margin-bottom:20px;">
+	 <div class="col-md-6"><label class="form-group">Skater Level:</label>
+	   <select class="form-control" id="skater_level">
+	     <option value="" disabled selected>-- Select one --</option>
+	     <option value="Senior">Senior</option>
+	     <option value="Junior">Junior</option>
+	     <option value="Novice">Novice</option>
+	     <option value="Intermediate">Intermediate</option>
+	     <option value="Juvenile">Juvenile</option>
+	     <option value="Pre-juvenile">Pre-Juvenile</option>
+	     <option value="Preliminary">Preliminary</option>
+	     <option value="Pre-preliminary">Pre-Preliminary</option>
+	     <option value="No test/beginner">No Test/Beginner</option>
+	     <option value="Not Sure">Not Sure</option>
+	   </select>
+	 </div>
+       </div>
+       <div class="row" style="margin-bottom:20px;">
+	 <div class="col-md-10"><label class="form-group">Please provide any additional information about your previous training and/or questions you have for us.</label><textarea class="form-control"  rows="10" id="message"></textarea></div>
+       </div>
+       <div class="row">
+	 <div class="col-md-6">
+	   <input type="submit" value="Send Information Request" class="btn btn-contact"> 
+	 </div>
+       </div>
+
+       </form>
+
+   </div>
+   
+   <div class="col-md-4 col-xs-4" style="background:#efefef;">
+
+   </div>
+
+  </div>
+</div>
+
+
+
+<div style="clear: both;margin-bottom:40px;">
+</div>
+
+
+<div style="background:#ddd;height:80px;">
+  <div style="text-align:center;padding-top:16px;">
+  <a class="btn btn-social-icon btn-instagram" href="http://www.instagram.com/skatekostin" target="_blank"><span class="fa fa-instagram" style="font-size:30px;color:#c02630;"></span></a>
+  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/skatekostin" target="_blank"><span class="fa fa-facebook" style="font-size:24px;color:#c02630;"></span></a>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="footer-wrap">
+&copy; 2017 SkateKostin International
+</div>
+
+</body>
+</html>

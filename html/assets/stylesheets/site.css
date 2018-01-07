@@ -1,0 +1,652 @@
+body{
+  font-family: Helvetica;
+  color: #777;
+  overflow-x: hidden;
+  max-width: 100%;
+  #padding-top: 100px;
+
+  h1{
+    font-size: 24px;
+    margin: 0 0 10px;
+    line-height: 1em;
+  }
+
+  h2{
+    font-size: 21px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  a{
+    color: #fff;
+    text-decoration:none !important;
+
+    &:hover, &:active {
+      color: #fff;
+    }
+
+    &:hover, &:active, &:visited, &:link{
+      text-decoration:none;
+    }
+  }
+  .cta-color{
+    color: #e72828;
+  }
+
+}
+
+
+textarea{
+    resize: none;
+}
+
+.menus-homepage-banner{
+  background:#970212;
+  width:100%;
+  height:70px;
+}
+
+.menus-homepage ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 70%;
+  }
+
+.menus-homepage li{
+    display: inline-block;
+    float: none;
+    padding: 10 0 0 0px;
+  }
+
+.menus-homepage li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+.menus-homepage li a:hover{
+    color: #efefef;
+  }
+
+.menus-homepage li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.menus-homepage li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.menus-subpages ul{
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+.menus-subpages li{
+    float: left;
+    padding: 20 0 20 10px;
+  }
+
+.menus-subpages li a{
+    display: block;
+    color: #a03a3a;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+
+.menus-subpages li a:hover{
+    background-color: #fff;
+    color: #c02630;
+  }
+
+.menus-subpages li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c02630;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.menus-subpages li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+.menus-subpages li a.active:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c02630;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.menus-subpages li a.contact{
+    background-color: #c02630;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+.menus-subpages li a.contact-hover:hover{
+    background-color: #d93f4a;
+  }
+
+.menus-subpages li a.no-hover:hover:before{
+    visibility: hidden;
+  }
+
+.menus-subpages .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .menus-subpages li a:not(:first-child) {display: none;}
+  .menus-subpages li a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menus-subpages.responsive {position: relative;}
+  .menus-subpages.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menus-subpages.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.navbar-sk{
+  position: fixed;
+  background: #fff;
+  height: 80px;
+  width: 100%;
+
+  ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  li{
+    float: left;
+    padding: 20 0 20 20px;
+  }
+
+  li a{
+    display: block;
+    color: #a03a3a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  li a:hover{
+    background-color: #fff;
+    color: #c02630;
+  }
+
+  li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c02630;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+}
+
+
+.navbar-sk2{
+  position: fixed;
+  background: #fff;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  z-index: 100000000;
+  padding-left: 10px;
+  #padding-left:360px;
+
+  ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  li{
+    float: right;
+    padding: 20 0 20 20px;
+  }
+
+  li a{
+    display: block;
+    color: #a03a3a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  li a:hover{
+    background-color: #fff;
+    color: #dd0a19
+  }
+
+  li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+}
+
+.navbar-sk3{
+  height: 80px;
+  #width: 100%;
+  text-align: center;
+  z-index: 100000000;
+  padding-left: 60px;
+  padding-top: 40px;  
+
+  ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li{
+    float: right;
+    padding: 20 0 20 20px;
+  }
+
+  li a{
+    display: block;
+    color: #a03a3a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  li a:hover{
+    color: #dd0a19
+  }
+
+  li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+}
+
+
+
+
+.header {
+  background: #3e3e3e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #eee;
+
+  .logo{
+    float: right;
+    max-height:120px;
+    line-height:50px;
+    padding-right:20px;
+    background: #3e3e3e;
+  }
+}
+
+.header-sub {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo{
+    float: right;
+    max-height:100px;
+    margin-top:10px;
+    margin-right:20px;
+    background: #fff;
+}
+
+
+.header-2 {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 120px;
+
+  .logo{
+    float: right;
+    max-height:120px;
+    line-height:50px;
+    padding-right:20px;
+    background: #3e3e3e;
+  }
+}
+
+.header-3 {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 150px;
+
+  .logo{
+    float: right;
+    max-height:150px;
+    line-height:50px;
+    padding-right:20px;
+    background: #3e3e3e;
+  }
+}
+
+
+
+.banner-home{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left top;
+  background-size: cover;
+  padding: 20px 20px;
+  text-align: center;
+  min-height: 500px;
+  z-index: -1;
+}
+
+.banner-about{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left top;
+  background-size: cover;
+  padding: 60 60px;
+  text-align: center;
+  min-height: 160px;
+  z-index: -1;
+}
+
+.banner-team{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 60 60px;
+  text-align: center;
+  min-height: 340px;
+  z-index: -1;
+}
+
+.banner-program{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 60 60px;
+  text-align: center;
+  min-height: 500px;
+  max-height: 500px;
+  z-index: -1;
+}
+
+.banner-contact{
+  background: #6d6d6d;
+  width: 100%;
+  padding: 80px;
+}
+
+.usfsa-block{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left top;
+  background-size: cover;
+  padding: 0;
+  margin-top:10px;
+  min-height:260px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.tag-line1{
+  margin-top: 150px;
+  color: #4c4b4b;
+  font-size: 36px;
+}
+
+.tag-line2{
+  color: #9e1f27;
+  font-size: 28px;
+}
+
+.tag-line1-contentpage{
+  margin-top: 100px;
+  color: #6d6d6d !important;
+  opacity: 1.0 !important;
+  font-size: 36px;
+}
+
+.tag-line1-teampage{
+  margin-top: 200px;
+  float: right;
+  color: #6d6d6d !important;
+  opacity: 1.0 !important;
+  font-size: 28px;
+}
+
+.tag-line1-programpage{
+  margin-top: 380px;
+  float: right;
+  color: #6d6d6d !important;
+  opacity: 1.0 !important;
+  font-size: 28px;
+}
+
+.tag-line2-contentpage{
+  color: #9e1f27;
+  font-size: 24px;
+}
+
+
+.content{
+  margin: 40px 100px 40px 100px;
+}
+
+.content-block{
+  width: 100%;
+  #background: red;
+  padding: 40px 60px 0px 60px;
+}
+
+
+.cta{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-ski{
+  border-radius: 5px;
+  line-height: 45px;
+  height: 50px;
+  padding: 4px 40px;
+  border: solid 1px #801920;
+  text-decoration: none;
+}
+
+.btn-cta{
+  color: #FFF;
+  background: #951d25;
+  height: 60px;
+  line-height: 40px;
+  padding: 10 40px;
+  border-radius: 5px;
+}
+
+.btn-cta:hover{
+    background: #c02630;
+    color: #fff;
+}
+
+.btn-cta.btn-transparent{
+    background: transparent !important;
+    border: solid 1px #FFF;
+}
+
+.btn-contact{
+  color: #FFF;
+  background: #951d25;
+  height: 40px;
+  line-height: 16px;
+  padding: 10 20px;
+  border-radius: 5px;
+  font-size:14px;
+}
+
+.btn-contact:hover{
+    background: #c02630;
+    color: #fff;
+}
+
+
+.team-testimonial{
+  color: #fff;
+  font-family:Georgia;
+  font-size: 22px;
+}
+
+.team-testimonial-long{
+  margin: 40 10 80 20px;
+  color: #fff;
+}
+
+.team-testimonial-short{
+  font-size:24px;
+  color: #fff;
+  margin: 100 10 126 20px;
+}
+
+.homepage-carousel-img{
+  object-fit: cover;
+}
+
+.glyphicon-instagram{
+  src: url('https://s3.us-east-2.amazonaws.com/ksi-images/home/glyph-logo_May2016.png');
+  color: red;
+  height: 30px;
+}
+
+.glyphicon-envelope{
+  color: red;
+  width: 50px;
+}
+
+.footer-wrap{
+  background: #fff;
+  padding: 30 0 30 30px;
+  text-align: center;
+  width: 100%;
+}
+

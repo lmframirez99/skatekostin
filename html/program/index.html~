@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>SkateKostin International</title>
+
+<link rel="shortcut icon" href="https://s3.us-east-2.amazonaws.com/ksi-images/home/favicon_square.png" type="image/x-icon"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="header-sub">
+    <div class="logo">
+      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg" height="80px;" width="280px;">
+    </div>
+
+    <div class="menus-subpages" style="background: #fff;">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../team/">Our Team</a></li>
+        <li><a href="../program/" class="active no-hover">Our Program</a></li>
+        <li><a href="../news/">News & Updates</a></li>
+        <li><a href="../contact/" class="contact contact-hover no-hover">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner-program">
+  <div class="col-md-4 col-xs-4" style="margin-top:40px;height:400px;text-transform:uppercase;color:#3d3d3d;font-size:32px;font-family:Futura;text-align:left;padding-top:40px;padding-right:40px;">
+    <div style="background:#fff;padding-left:20px;padding-top:20px;">
+      It comes down to one simple thing:
+      </div>
+    <div style="background:#3d3d3d;color:#fff;padding-left:20px;padding-bottom:20px;padding-top:10px;">
+      How bad do you want it?
+      </div>
+    </div>
+  <div class="tag-line1-programpage">Coordinated training for exceptional results. </div><br><br>
+</div>
+
+<div class="container-fluid">
+  <div class="content-block">
+
+   <div class="col-md-12 col-xs-12">
+   <div style="background:#efefef;height:70px;width:100%;text-align:center;margin-bottom:30px;">
+     <h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Program Basics</h3>
+   </div>
+   </div>
+
+    <div class="col-md-12 col-xs-12">
+      <div class="col-md-8 col-xs-8" style="font-size:14px;line-height:1.8em;text-align:justify;">
+	<p>
+	The SkateKostin Program is designed to meet the needs of skaters at all levels with a variety of different goals. The team approach allows us to coordinate with families to meet the individual goals of the skater as well as the financial and schedule requirements of the family. Our coaches are on the ice 6 days a week working with skaters from 8am until 7pm to guarantee there is a schedule that works for each skater.
+	</p>
+	<p>
+	Our training model is founded on the concept that the best overall athletes make the best figure skaters. Each skater in our program participates in on-ice private and group lessons, as well as off-ice strength and conditioning training, dance classes, harness work and mental preparation. Preparation for success on the ice begins off ice and athletes that are well-conditioned have fewer injuries and less time away from sport. 
+	</p>
+	<p>
+	  Our on-ice program focuses on making sure each of our skaters has a strong technical foundation for success at the highest levels in the sport. Working with coaches of different specialties, including skating skills, jumps, spins and choreography, guarantees that all the components of a figure skating program are addressed in our athletes. Group classes play an important role in our program to allow our skaters to build friendships and training teammates that help them through the challenges of pursuing an elite level of competitiveness.
+	</p>
+	<p>
+	While most skaters in our program are pursuing highly competitive figure skating goals, we understand that not every skater is ready to pursue a competitive path immediately. Our skill development and beginner training programs allow skaters to opt for fewer training sessions while still working toward their individual goals. 
+	</p>
+      </div>
+      <div class="col-md-4 col-xs-4" style="margin-top:10px;">
+	<img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/Training.jpg" width="340px;">
+      </div>
+    </div>
+
+    <div style="clear:both;margin-bottom:60px;"></div>
+
+   <div class="col-md-12 col-xs-12">
+   <div style="background:#efefef;height:70px;width:100%;text-align:center;margin-bottom:30px;">
+     <h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Competitive Focused Training</h3>
+   </div>
+   </div>
+
+    <div class="col-md-12 col-xs-12">
+      <div class="col-md-8 col-xs-8" style="font-size:14px;line-height:1.8em;text-align:justify;">
+	<p>
+	For skaters looking to compete at the regional, sectional, national or international level, our competitive training program provides all the elements needed for success. Working closely with our team of coaches, a customized schedule will be built for each skater to maximize their training time. Skaters looking to be competitive are expected to skate multiple sessions for a minimum of five days a week as well as participate in regular off-ice harness lessons, strength and conditioning training and dance classes. Additionally, these skaters are expected to attend seminars and guest speakers that are brought in to discuss topics including IJS scoring, nutrition, and mental training. 
+	</p>
+	<p>
+	  For those athletes that are looking to make skating their primary focus during the day, we offer training sessions throughout the day as well as an environment that provides for academic success when completing schooling through virtual programs.
+	  </p>
+      </div>
+    </div>
+
+
+   <div class="col-md-12 col-xs-12">
+   <div style="background:#efefef;height:70px;width:100%;text-align:center;margin-bottom:30px;">
+     <h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Skill Development Training</h3>
+   </div>
+   </div>
+
+    <div class="col-md-12 col-xs-12">
+      <div class="col-md-8 col-xs-8" style="font-size:14px;line-height:1.8em;text-align:justify;">
+	For skaters that aren't quite ready to compete at the elite level, skill development training might be more appropriate for a period of time. Our coaches will design a slightly less rigorous training program that allows you to focus more on building up skills and the confidence needed to continue on to becoming a competitive skater in the future. Training still includes both on and off ice program components with fewer sessions expected than for competitive skaters, although we encourage all of our skaters to participate in as many of our program offerings as possible.
+      </div>
+
+
+    </div>
+
+   <div class="col-md-12 col-xs-12">
+   <div style="background:#efefef;height:70px;width:100%;text-align:center;margin-bottom:30px;">
+     <h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Beginner or Recreational Training</h3>
+   </div>
+   </div>
+
+    <div class="col-md-12 col-xs-12">
+      <div class="col-md-8 col-xs-8" style="font-size:14px;line-height:1.8em;text-align:justify;">
+	If you're new to skating or just looking to enjoy the sport while balancing it with our responsibilities, SkateKostin has a program for you as well. 
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+<div style="clear: both;margin-bottom:40px;">
+</div>
+
+
+<div style="background:#ddd;height:80px;">
+  <div style="text-align:center;padding-top:16px;">
+  <a class="btn btn-social-icon btn-instagram" href="http://www.instagram.com/skatekostin" target="_blank"><span class="fa fa-instagram" style="font-size:30px;color:#c02630;"></span></a>
+  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/skatekostin" target="_blank"><span class="fa fa-facebook" style="font-size:24px;color:#c02630;"></span></a>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="footer-wrap">
+&copy; 2017 SkateKostin International
+</div>
+
+</body>
+</html>
