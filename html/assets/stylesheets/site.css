@@ -498,6 +498,15 @@ textarea{
   z-index: -1;
 }
 
+.banner-news{
+  background: #eee;
+  padding: 60 60px;
+  text-align: center;
+  min-height: 500px;
+  max-height: 500px;
+  z-index: -1;
+}
+
 .banner-contact{
   background: #6d6d6d;
   width: 100%;
