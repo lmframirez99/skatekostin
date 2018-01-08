@@ -499,7 +499,7 @@ textarea{
 }
 
 .banner-news{
-  background: #eee;
+  background: #ccc;
   padding: 60 60px;
   text-align: center;
   min-height: 500px;
@@ -544,7 +544,7 @@ textarea{
 .tag-line1-teampage{
   margin-top: 200px;
   float: right;
-  color: #6d6d6d !important;
+  color: #951d25 !important;
   opacity: 1.0 !important;
   font-size: 28px;
 }
@@ -552,7 +552,7 @@ textarea{
 .tag-line1-programpage{
   margin-top: 380px;
   float: right;
-  color: #6d6d6d !important;
+  color: #951d25 !important;
   opacity: 1.0 !important;
   font-size: 28px;
 }
