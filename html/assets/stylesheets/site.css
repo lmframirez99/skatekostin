@@ -635,6 +635,56 @@ textarea{
   object-fit: cover;
 }
 
+.news-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 10px;
+    min-height: 70px;
+}
+
+.news-date {
+    height: 70px; 
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px 10px;
+    float:left;
+    color: #fff;
+    text-align: center;
+}
+
+.news-date:before {
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border-radius: 35px;
+    background: #c02630;
+    z-index: -100;
+}
+
+.news-date div {
+    z-index: 5000;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.news-info {
+    position: relative;
+    margin-bottom:30px;
+    padding-left: 90px;
+    padding-top:10px;
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
 .glyphicon-instagram{
   src: url('https://s3.us-east-2.amazonaws.com/ksi-images/home/glyph-logo_May2016.png');
   color: red;
