@@ -1,0 +1,130 @@
+body{
+  font-family: Helvetica;
+  color: #777;
+  overflow-x: hidden;
+  max-width: 100%;
+  #padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    margin: 0 0 10px;
+    line-height: 1.25em;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  h3{
+    font-size: 32px;
+  }
+
+  h4{
+    font-size: 21px;
+  }
+
+a{
+    color: #fff;
+    text-decoration:none !important;
+
+    &:hover, &:active {
+      color: #fff;
+    }
+
+    &:hover, &:active, &:visited, &:link{
+      text-decoration:none;
+    }
+}
+
+
+.cta-color{
+    color: #e72828;
+  }
+
+.logo{
+    float: left;
+    max-height:140px;
+    margin-top:10px;
+    margin-left:10px;
+    background: #fff;
+}
+
+.header-sub {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.menus-subpages ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+.menus-subpages li{
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 0;
+  }
+
+.menus-subpages li a{
+    display: block;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+  }
+
+.menus-subpages li a:hover{
+    background-color: #fff;
+    color: #c02630;
+  }
+
+.menus-subpages li a.contact{
+    background-color: #fff;
+    color: #c02630;
+    border-radius: 5px;
+  }
+
+.menus-subpages li a.contact-hover:hover{
+    background-color: #ccc;
+  }
+
+.menus-subpages li a.no-hover:hover:before{
+    visibility: hidden;
+  }
+
+.menus-subpages .icon {
+  float: right;
+  display: none;
+}
+
+
+.content-block{
+  width: 100%;
+  #background: red;
+  padding: 0px;
+}
+
+.about-vision{
+  font-size: 28px;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.about-why{
+  font-size: 28px;
+  line-height: 1.2em;
+  text-align: justify;
+}
