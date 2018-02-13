@@ -614,7 +614,6 @@ video {
 
 .content-block{
   width: 100%;
-  #background: red;
   padding: 40px 60px 0px 60px;
 }
 
@@ -643,6 +642,29 @@ video {
   padding: 4px 40px;
   border: solid 1px #801920;
   text-decoration: none;
+}
+
+.team-bio{
+    margin-top:50px;
+}
+
+.team-bio-small{
+    margin-top:50px;
+}
+
+.team-bio p{
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 1.6em; 
+    margin-top: 10px;
+    text-align: justify; 
+}
+.team-bio-small p{
+    margin-left: 24px;
+    margin-right: 20px;
+    line-height: 1.6em; 
+    margin-top: 20px;
+    text-align: justify; 
 }
 
 .btn-cta{
@@ -679,6 +701,13 @@ video {
     color: #fff;
 }
 
+.testimonials{
+  background: #333;
+  margin-top: 140px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ccc;
+}
 
 .team-testimonial{
   color: #fff;
