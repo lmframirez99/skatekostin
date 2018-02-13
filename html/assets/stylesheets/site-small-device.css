@@ -110,10 +110,34 @@ a{
   display: none;
 }
 
+.banner-about{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice.JPG) no-repeat scroll left top;
+  background-size: cover;
+  padding: 0 20px;
+  text-align: center;
+  min-height: 400px;
+  margin-top: -30px;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.banner-team{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 0 60px;
+  text-align: center;
+  min-height: 360px;
+  position: relative;
+  margin-top:100px;
+  z-index: -1;
+}
+
+.tag-line1-teampage{
+  display: none;
+}
 
 .content-block{
   width: 100%;
-  #background: red;
   padding: 0px;
 }
 
@@ -128,3 +152,96 @@ a{
   line-height: 1.2em;
   text-align: justify;
 }
+
+.team-bio{
+    margin-top:50px;
+    margin-bottom:40px;
+}
+
+.team-bio-small{
+    margin-top:50px;
+}
+
+.team-bio p{
+    font-size:24px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 1.2em; 
+    margin-top: 10px;
+    text-align: justify; 
+}
+.team-bio-small p{
+    font-size:24px;
+    margin-left: 24px;
+    margin-right: 20px;
+    line-height: 1.2em; 
+    margin-top: 20px;
+    text-align: justify; 
+}
+
+hr {
+  border: 0;
+  width: 100%;
+}
+
+hr.bio{
+  margin-top:10px;
+  border: 0;
+  height: 6px;
+  background: #ccc; 
+  background-image: -webkit-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -moz-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -ms-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -o-linear-gradient(left, #efefef, #ccc, #efefef);
+}
+
+
+.btn-contact{
+  color: #FFF;
+  background: #951d25;
+  height: 60px;
+  line-height: 1.2em;
+  padding: 10 20px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.btn-contact:hover{
+    background: #c02630;
+    color: #fff;
+}
+
+.btn-ski{
+  border-radius: 5px;
+  line-height: 1.5em;
+  height: 50px;
+  padding: 4px 40px;
+  border: solid 1px #801920;
+  text-decoration: none;
+}
+
+.testimonials{
+  background: #333;
+  margin-top: 20px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ccc;
+}
+
+.team-testimonial{
+  color: #fff;
+  font-family:Georgia;
+  font-size: 32px;
+}
+
+.team-testimonial-long{
+  margin: 40 20 60 20px;
+  color: #fff;
+}
+
+.team-testimonial-short{
+  font-size:28px;
+  color: #fff;
+  margin: 40 20 204 20px;
+}
+
