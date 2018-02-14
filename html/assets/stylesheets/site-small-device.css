@@ -1,5 +1,5 @@
 body{
-  font-family: Helvetica;
+  font-family: Quicksand;
   color: #777;
   overflow-x: hidden;
   max-width: 100%;
@@ -61,6 +61,63 @@ a{
   border-bottom: 1px solid #eee;
 }
 
+.menus-homepage-banner{
+  background:#970212;
+  width:100%;
+  height:100px;
+}
+
+.menus-homepage ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+  }
+
+.menus-homepage li{
+    display: inline-block;
+    float: none;
+    padding: 0;
+  }
+
+.menus-homepage li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+.menus-homepage li a:hover{
+    color: #efefef;
+  }
+
+.menus-homepage li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.menus-homepage li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
 
 .menus-subpages ul{
     margin: 0;
@@ -110,6 +167,15 @@ a{
   display: none;
 }
 
+.usfsa-block{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left top;
+  background-size: cover;
+  padding: 0;
+  margin-top:10px;
+  min-height:400px;
+  z-index: -1;
+}
+
 .banner-about{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice.JPG) no-repeat scroll left top;
   background-size: cover;
@@ -122,19 +188,58 @@ a{
 }
 
 .banner-team{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.png) no-repeat scroll left center;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left center;
   background-size: cover;
   padding: 0 60px;
   text-align: center;
   min-height: 360px;
   position: relative;
-  margin-top:100px;
+  margin-top: 100px;
   z-index: -1;
 }
 
 .tag-line1-teampage{
   display: none;
 }
+
+.home-info p{
+  margin: auto;
+  padding-top: 30px; 
+  width: 100%;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+.home-meet-team {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 0px;
+  padding-bottom: 30px;
+}
+
+.home-partner-images{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.home-usfsa-logo{
+  width: 200px;
+  padding: 0px 40px;
+}
+
+.home-nvo-logo{
+  width: 220px;
+  padding: 0px 40px;
+}
+
+.home-colonial-logo{
+  width: 180px;
+  padding: 0px 40px;
+}
+
 
 .content-block{
   width: 100%;
@@ -195,6 +300,26 @@ hr.bio{
   background-image: -o-linear-gradient(left, #efefef, #ccc, #efefef);
 }
 
+.btn-cta{
+  color: #FFF;
+  background: #951d25;
+  height: 100px;
+  font-size: 28px;
+  line-height: 1.2em;
+  padding: 30 60px;
+  border: solid 1px #801920;
+  border-radius: 5px;
+}
+
+.btn-cta:hover{
+    background: #c02630;
+    color: #fff;
+}
+
+.btn-cta.btn-transparent{
+    background: transparent !important;
+    border: solid 1px #FFF;
+}
 
 .btn-contact{
   color: #FFF;
