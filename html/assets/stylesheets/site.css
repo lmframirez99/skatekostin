@@ -1,5 +1,5 @@
 body{
-  font-family: Helvetica;
+  font-family: Quicksand;
   color: #777;
   overflow-x: hidden;
   max-width: 100%;
@@ -71,6 +71,7 @@ textarea{
     display: block;
     color: #fff;
     text-align: center;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 10px 30px;
     text-decoration: none;
@@ -462,7 +463,7 @@ textarea{
 
 
 .banner-home{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left top;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skatesoriginal.jpg) no-repeat scroll left top;
   background-size: cover;
   padding: 20px 20px;
   text-align: center;
@@ -477,12 +478,12 @@ textarea{
   text-align: center;
   min-height: 500px;
   margin-top: -30px;
-  opacity: 0.8;
+  opacity: 1;
   z-index: -1;
 }
 
 .banner-team{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.png) no-repeat scroll left center;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left center;
   background-size: cover;
   padding: 60 60px;
   text-align: center;
@@ -559,9 +560,29 @@ video {
   padding: 0;
   margin-top:10px;
   min-height:260px;
-  opacity: 0.7;
   z-index: -1;
 }
+
+.home-partner-images{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.home-usfsa-logo{
+  width: 100px;
+}
+
+.home-nvo-logo{
+  width: 120px;
+}
+
+.home-colonial-logo{
+  width: 80px;
+}
+
 
 .tag-line1{
   margin-top: 150px;
@@ -605,6 +626,18 @@ video {
 .tag-line2-contentpage{
   color: #9e1f27;
   font-size: 24px;
+}
+
+.home-info p{
+  margin-left: 80px;
+  padding-top: 30px; 
+  width: 80%;
+}
+
+.home-meet-team {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 80px;
 }
 
 
@@ -671,6 +704,7 @@ video {
   color: #FFF;
   background: #951d25;
   height: 60px;
+  font-size: 16px;
   line-height: 40px;
   padding: 10 40px;
   border-radius: 5px;
