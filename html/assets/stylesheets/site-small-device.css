@@ -24,7 +24,7 @@ h1{
     font-size: 21px;
   }
 
-a{
+  a{
     color: #fff;
     text-decoration:none !important;
 
@@ -179,11 +179,9 @@ a{
 .banner-about{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice.JPG) no-repeat scroll left top;
   background-size: cover;
-  padding: 0 20px;
+  padding: 0 60px;
   text-align: center;
-  min-height: 400px;
-  margin-top: -30px;
-  opacity: 0.8;
+  min-height: 470px;
   z-index: -1;
 }
 
@@ -192,10 +190,62 @@ a{
   background-size: cover;
   padding: 0 60px;
   text-align: center;
-  min-height: 360px;
+  min-height: 400px;
   position: relative;
-  margin-top: 100px;
   z-index: -1;
+}
+
+.banner-program{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 0 60px;
+  text-align: center;
+  min-height: 400px;
+  max-height: 400px;
+  z-index: -1;
+}
+
+.banner-program-test{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 60 60px;
+  text-align: center;
+  min-height: 500px;
+  max-height: 500px;
+  z-index: -1;
+}
+
+
+video {
+  display: initial;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  min-width: 100%;
+  min-height: 400px;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-40%) translateY(-50%);
+  background-size: cover;
+  transition: 3s opacity;
+}
+
+.banner-news{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/medals.jpg) no-repeat scroll left center;
+  background-size: cover;
+  #background: #eee;
+  padding: 0 60px;
+  text-align: center;
+  min-height: 400px;
+  max-height: 400px;
+  z-index: -1;
+}
+
+.banner-contact{
+  background: #970212;
+  width: 100%;
+  padding: 80px;
 }
 
 .tag-line1-teampage{
@@ -268,7 +318,7 @@ a{
 }
 
 .team-bio p{
-    font-size:24px;
+    font-size:28px;
     margin-left: 10px;
     margin-right: 20px;
     line-height: 1.2em; 
@@ -276,12 +326,20 @@ a{
     text-align: justify; 
 }
 .team-bio-small p{
-    font-size:24px;
+    font-size:28px;
     margin-left: 24px;
     margin-right: 20px;
     line-height: 1.2em; 
     margin-top: 20px;
     text-align: justify; 
+}
+
+.team-partner {
+  font-size: 28px;
+  margin-right: 10px;
+  line-height: 1.2em;
+  margin-top: 20px;
+  text-align: justify;
 }
 
 hr {
@@ -298,6 +356,176 @@ hr.bio{
   background-image: -moz-linear-gradient(left, #efefef, #ccc, #efefef);
   background-image: -ms-linear-gradient(left, #efefef, #ccc, #efefef);
   background-image: -o-linear-gradient(left, #efefef, #ccc, #efefef);
+}
+
+.program-quote {
+  margin-top: 100px;
+  height: 400px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-size: 32px;
+  font-family: Futura;
+  text-align: left;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.program-content {
+  font-size: 28px;
+  line-height: 1.2em;
+  text-align: justify;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.program-images-carousel {
+  background: #fff;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.program-image{
+  text-align: center;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+  #max-height: 100%;
+}
+
+.event-info {
+  width: 500px;
+  font-size: 28px;
+  float: left;
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.news-content {
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: justify; 
+  padding-left: 0px;
+}
+
+.news-comp-label {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.news-comp-results {
+  margin-bottom: 24px;
+}
+
+.news-images-carousel {
+  background: #fff;
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.news-image {
+  text-align: center;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.news-photo {
+  height: 100%;
+}
+
+.news-block {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.news-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 10px;
+    min-height: 140px;
+}
+
+.news-date {
+    height: 140px; 
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    float:left;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+.news-date:before {
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    background: #c02630;
+    z-index: -100;
+}
+
+.news-date div {
+    z-index: 5000;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.news-info {
+    position: relative;
+    margin-bottom:30px;
+    padding-left: 180px;
+    padding-top: 20px;
+    font-size: 28px;
+    color: #d0d0d0;
+}
+
+.news-info a{
+  color: #970212;
+  text-decoration: underline !important;
+}
+
+.contact-form {
+  border: none;
+  font-size: 28px;
+}
+
+.contact-directions {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-row {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+.contact-map {
+  margin: 40 0 40 0px;
+  width: 100%;
+  background: #efefef;
+  height: 400px;
+}
+
+.contact-location-info {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 28px;
 }
 
 .btn-cta{
@@ -365,8 +593,47 @@ hr.bio{
 }
 
 .team-testimonial-short{
-  font-size:28px;
+  font-size: 32px;
   color: #fff;
-  margin: 40 20 204 20px;
+  margin: 40 20 194 20px;
 }
+
+.glyphicon-instagram{
+  src: url('https://s3.us-east-2.amazonaws.com/ksi-images/home/glyph-logo_May2016.png');
+  color: red;
+  height: 60px;
+}
+
+.glyphicon-envelope{
+  color: red;
+  width: 100px;
+}
+
+.btn-instagram {
+  font-size: 42px;
+  color: #c02630;
+}
+
+.btn-facebook {
+  font-size: 36px;
+  color: #c02630;
+}
+
+.social-bar {
+  background: #ddd;
+  height: 120px;  
+}
+
+.social-icons {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-wrap{
+  background: #fff;
+  padding: 30 0 30 30px;
+  text-align: center;
+  width: 100%;
+}
+
 
