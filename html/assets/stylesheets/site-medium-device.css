@@ -1,0 +1,651 @@
+body{
+  font-family: Quicksand;
+  color: #777;
+  overflow-x: hidden;
+  max-width: 100%;
+  #padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    margin: 0 0 10px;
+    line-height: 1.25em;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  h3{
+    font-size: 32px;
+  }
+
+  h4{
+    font-size: 21px;
+  }
+
+  a{
+    color: #fff;
+    text-decoration:none !important;
+
+    &:hover, &:active {
+      color: #fff;
+    }
+
+    &:hover, &:active, &:visited, &:link{
+      text-decoration:none;
+    }
+}
+
+
+.cta-color{
+    color: #e72828;
+  }
+
+.logo{
+    float: left;
+    max-height:120px;
+    margin-top:10px;
+    margin-left:10px;
+    background: #fff;
+}
+
+.header-sub {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #eee;
+}
+
+.menus-homepage-banner{
+  background:#970212;
+  width:100%;
+  height:100px;
+}
+
+.menus-homepage ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+  }
+
+.menus-homepage li{
+    display: inline-block;
+    float: none;
+    padding: 0;
+  }
+
+.menus-homepage li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 30px 20px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+.menus-homepage li a:hover{
+    color: #efefef;
+  }
+
+.menus-homepage li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.menus-homepage li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+.menus-subpages ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+.menus-subpages li{
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 0;
+  }
+
+.menus-subpages li a{
+    display: block;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+  }
+
+.menus-subpages li a:hover{
+    background-color: #fff;
+    color: #c02630;
+  }
+
+.menus-subpages li a.contact{
+    background-color: #fff;
+    color: #c02630;
+    border-radius: 5px;
+  }
+
+.menus-subpages li a.contact-hover:hover{
+    background-color: #ccc;
+  }
+
+.menus-subpages li a.no-hover:hover:before{
+    visibility: hidden;
+  }
+
+.menus-subpages .icon {
+  float: right;
+  display: none;
+}
+
+.usfsa-block{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left top;
+  background-size: cover;
+  padding: 0;
+  margin-top:10px;
+  min-height:500px;
+  z-index: -1;
+}
+
+.banner-about{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice.JPG) no-repeat scroll left top;
+  background-size: cover;
+  padding: 0 60px;
+  text-align: center;
+  min-height: 470px;
+  z-index: -1;
+}
+
+.banner-team{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left center;
+  background-size: cover;
+  padding: 0 0px;
+  margin-top: 60px;
+  text-align: center;
+  min-height: 470px;
+  position: relative;
+  z-index: -1;
+}
+
+.banner-program{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 0 60px;
+  text-align: center;
+  min-height: 400px;
+  max-height: 400px;
+  z-index: -1;
+}
+
+.banner-program-test{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
+  background-size: cover;
+  padding: 60 60px;
+  text-align: center;
+  min-height: 500px;
+  max-height: 500px;
+  z-index: -1;
+}
+
+
+video {
+  display: initial;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 400px;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 3s opacity;
+}
+
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  video {
+      margin-top: -120px;
+  }
+}
+
+
+
+.banner-news{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/medals.jpg) no-repeat scroll left center;
+  background-size: cover;
+  #background: #eee;
+  padding: 0 60px;
+  text-align: center;
+  min-height: 400px;
+  max-height: 400px;
+  z-index: -1;
+}
+
+.banner-contact{
+  background: #970212;
+  width: 100%;
+  padding: 80px;
+}
+
+.tag-line1-teampage{
+  display: none;
+}
+
+.home-info p{
+  margin: auto;
+  padding-top: 30px; 
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+.home-meet-team {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 0px;
+  padding-bottom: 30px;
+}
+
+.home-partner-images{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.home-usfsa-logo{
+  width: 200px;
+  padding: 0px 40px;
+}
+
+.home-nvo-logo{
+  width: 220px;
+  padding: 0px 40px;
+}
+
+.home-colonial-logo{
+  width: 180px;
+  padding: 0px 40px;
+}
+
+
+.content-block{
+  width: 100%;
+  padding: 0px;
+}
+
+.about-vision{
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.about-why{
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.team-bio{
+    margin-top:50px;
+    margin-bottom:40px;
+}
+
+.team-bio-small{
+    margin-top:50px;
+}
+
+.team-bio p{
+    font-size:24px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 1.2em; 
+    margin-top: 10px;
+    text-align: justify; 
+}
+.team-bio-small p{
+    font-size:24px;
+    margin-left: 24px;
+    margin-right: 20px;
+    line-height: 1.2em; 
+    margin-top: 20px;
+    text-align: justify; 
+}
+
+.team-partner {
+  font-size: 24px;
+  margin-right: 10px;
+  line-height: 1.2em;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+}
+
+hr.bio{
+  margin-top:10px;
+  border: 0;
+  height: 6px;
+  background: #ccc; 
+  background-image: -webkit-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -moz-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -ms-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -o-linear-gradient(left, #efefef, #ccc, #efefef);
+}
+
+.program-quote {
+  margin-top: 100px;
+  height: 400px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-size: 32px;
+  font-family: Futura;
+  text-align: left;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.program-content {
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: justify;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.program-images-carousel {
+  background: #fff;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.program-image{
+  text-align: center;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+  #max-height: 100%;
+}
+
+.event-info {
+  width: 500px;
+  font-size: 24px;
+  float: left;
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.news-content {
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: justify; 
+  padding-left: 0px;
+}
+
+.news-comp-label {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.news-comp-results {
+  margin-bottom: 24px;
+}
+
+.news-images-carousel {
+  background: #fff;
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.news-image {
+  text-align: center;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.news-photo {
+  height: 100%;
+}
+
+.news-block {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.news-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 10px;
+    min-height: 140px;
+}
+
+.news-date {
+    height: 140px; 
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    float:left;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.news-date:before {
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    background: #c02630;
+    z-index: -100;
+}
+
+.news-date div {
+    z-index: 5000;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.news-info {
+    position: relative;
+    margin-bottom:30px;
+    padding-left: 180px;
+    padding-top: 20px;
+    font-size: 24px;
+    color: #d0d0d0;
+}
+
+.news-info a{
+  color: #970212;
+  text-decoration: underline !important;
+}
+
+.contact-form {
+  border: none;
+  font-size: 24px;
+}
+
+.contact-directions {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-row {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+.contact-map {
+  margin: 40 0 40 0px;
+  width: 100%;
+  background: #efefef;
+  height: 400px;
+}
+
+.contact-location-info {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.btn-cta{
+  color: #FFF;
+  background: #951d25;
+  height: 100px;
+  font-size: 24px;
+  line-height: 1.2em;
+  padding: 30 60px;
+  border: solid 1px #801920;
+  border-radius: 5px;
+}
+
+.btn-cta:hover{
+    background: #c02630;
+    color: #fff;
+}
+
+.btn-cta.btn-transparent{
+    background: transparent !important;
+    border: solid 1px #FFF;
+}
+
+.btn-contact{
+  color: #FFF;
+  background: #951d25;
+  height: 60px;
+  line-height: 1.2em;
+  padding: 10 20px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.btn-contact:hover{
+    background: #c02630;
+    color: #fff;
+}
+
+.btn-ski{
+  border-radius: 5px;
+  line-height: 1.5em;
+  height: 50px;
+  padding: 4px 40px;
+  border: solid 1px #801920;
+  text-decoration: none;
+}
+
+.testimonials{
+  background: #333;
+  margin-top: 20px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ccc;
+}
+
+.team-testimonial{
+  color: #fff;
+  font-family:Georgia;
+  font-size: 32px;
+}
+
+.team-testimonial-long{
+  margin: 40 20 60 20px;
+  color: #fff;
+}
+
+.team-testimonial-short{
+  font-size: 32px;
+  color: #fff;
+  margin: 40 20 194 20px;
+}
+
+.glyphicon-instagram{
+  src: url('https://s3.us-east-2.amazonaws.com/ksi-images/home/glyph-logo_May2016.png');
+  color: red;
+  height: 60px;
+}
+
+.glyphicon-envelope{
+  color: red;
+  width: 100px;
+}
+
+.btn-instagram {
+  font-size: 42px;
+  color: #c02630;
+}
+
+.btn-facebook {
+  font-size: 36px;
+  color: #c02630;
+}
+
+.social-bar {
+  background: #ddd;
+  height: 120px;  
+}
+
+.social-icons {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-wrap{
+  background: #fff;
+  padding: 30 0 30 30px;
+  text-align: center;
+  width: 100%;
+}
+
+
