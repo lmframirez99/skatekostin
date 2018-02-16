@@ -485,19 +485,19 @@ textarea{
 .banner-team{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left center;
   background-size: cover;
-  padding: 60 60px;
+  padding: 0 60px;
   text-align: center;
-  min-height: 340px;
+  min-height: 470px;
   z-index: -1;
 }
 
 .banner-program{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
   background-size: cover;
-  padding: 60 60px;
+  padding: 0 60px;
   text-align: center;
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 470px;
+  max-height: 470px;
   z-index: -1;
 }
 
@@ -526,11 +526,13 @@ video {
 }
 
 .banner-news{
-  background: #eee;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/medals.jpg) no-repeat scroll left center;
+  background-size: cover;
+  #background: #eee;
   padding: 60 60px;
   text-align: center;
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 470px;
+  max-height: 470px;
   z-index: -1;
 }
 
@@ -546,10 +548,8 @@ video {
   z-index: -1;
 }
 
-
-
 .banner-contact{
-  background: #6d6d6d;
+  background: #970212;
   width: 100%;
   padding: 80px;
 }
@@ -677,6 +677,18 @@ video {
   text-decoration: none;
 }
 
+.team-quote{
+  margin-top: 40px;
+  height: 200px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-size: 24px;
+  font-family: Futura;
+  text-align: left;
+  padding-top: 120px;
+  padding-right: 40px;
+}
+
 .team-bio{
     margin-top:50px;
 }
@@ -698,6 +710,91 @@ video {
     line-height: 1.6em; 
     margin-top: 20px;
     text-align: justify; 
+}
+
+.team-partner p{
+  margin-right: 10px;
+  line-height: 1.8em;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.program-quote {
+  margin-top: 100px;
+  height: 400px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-size: 32px;
+  font-family: Futura;
+  text-align: left;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.program-content {
+  font-size: 14px;
+  line-height: 1.8em;
+  text-align: justify;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.program-images-carousel {
+  background: #fff;
+  height: 360px;
+  margin-top: 40px;
+}
+
+.news-content {
+  font-size: 14px;
+  line-height: 1.8em;
+  text-align: justify; 
+  padding-left: 40px;
+}
+
+.news-comp-label {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.news-comp-results {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.news-images {
+  background: #fff;
+  height: 500px;
+}
+
+.news-photo {
+  height: 400px;
+}
+
+.contact-form {
+  border-right:3px solid #efefef;
+}
+
+.contact-directions {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-row {
+  margin-bottom: 20px;
+}
+
+.contact-map {
+  margin-top: 60px;
+  margin-left: 20px;
+  width: 280px;
+  background: #efefef;
+  height: 300px;
+}
+
+.contact-location-info {
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .btn-cta{
@@ -733,6 +830,16 @@ video {
 .btn-contact:hover{
     background: #c02630;
     color: #fff;
+}
+
+.btn-instagram {
+  font-size: 30px;
+  color: #c02630;
+}
+
+.btn-facebook {
+  font-size: 24px;
+  color: #c02630;
 }
 
 .testimonials{
@@ -772,8 +879,22 @@ video {
   #max-height: 100%;
 }
 
+.event-info {
+  width: 300px;
+  float: left;
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
 .homepage-carousel-img{
   object-fit: cover;
+}
+
+.news-block {
+  width: 100%;
+  margin-left: 10px;
 }
 
 .news-item {
@@ -835,6 +956,26 @@ video {
 .glyphicon-envelope{
   color: red;
   width: 50px;
+}
+
+.btn-instagram {
+  font-size: 30px;
+  color: #c02630;
+}
+
+.btn-facebook {
+  font-size: 24px;
+  color: #c02630;
+}
+
+.social-bar {
+  background: #ddd;
+  height: 80px;  
+}
+
+.social-icons {
+  text-align: center;
+  padding-top: 16px;
 }
 
 .footer-wrap{
