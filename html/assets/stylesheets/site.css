@@ -844,8 +844,9 @@ video {
 
 .testimonials{
   background: #333;
-  margin-top: 140px;
-  height: 500px;
+  align: center;
+  margin-top: 20px;
+  height: 300px;
   border-radius: 5px;
   box-shadow: 3px 5px #ccc;
 }
@@ -864,7 +865,7 @@ video {
 .team-testimonial-short{
   font-size:24px;
   color: #fff;
-  margin: 100 10 126 20px;
+  margin: 40 10 130 20px;
 }
 
 .program-image{
