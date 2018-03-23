@@ -59,7 +59,7 @@
      <p class="contact-directions">
        For more information on our program, please contact us using the form below. We will be happy to discuss how our program can work for you.
      </p>
-     <form id="contact-form" action="../../cgi-bin/sendmail.pl" method="GET">
+     <form id="contact-form" action="../../cgi-bin/sendmail.pl" method="POST">
        <div class="row contact-row">
 	 <div class="col-md-6 col-sm-12 col-xs-12"><label class="form-group">Your Name:</label><input type="text" name="contact_name" value="" class="form-control" placeholder="Your name" id="contact_name"></div>
        </div>
@@ -148,6 +148,11 @@
           map: map
         });
       }
+
+      function submitFormFeedback() {
+        alert('Thank you for requesting information. We will be in touch shortly.');
+      }
+
     </script>
 
 <script async defer
