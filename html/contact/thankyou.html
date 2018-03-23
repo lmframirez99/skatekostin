@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>SkateKostin International | Contact Us</title>
+
+<link rel="shortcut icon" href="https://s3.us-east-2.amazonaws.com/ksi-images/home/favicon_square.png" type="image/x-icon"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="http://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="http://fonts.googleapis.com/css?family=Quicksand">
+
+<link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="../assets/stylesheets/site-small-device.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="../assets/stylesheets/site-medium-device.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="header-sub">
+    <div class="logo">
+      <a href="../"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg" height="80px;" width="280px;"></a>
+    </div>
+
+    <div class="menus-subpages" style="background: #fff;">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../team/">Our Team</a></li>
+        <li><a href="../program/">Our Program</a></li>
+        <li><a href="../news/">News & Updates</a></li>
+        <li><a href="../contact/" class="contact contact-hover no-hover">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner-contact">
+</div>
+
+<div style="clear: both;margin-bottom:20px;">
+</div>
+
+
+<div class="container-fluid">
+  <div class="content-block">
+
+    <div id="form-messages"></div>
+
+   <div class="col-md-8 col-sm-12 col-xs-12 contact-form">
+     <p class="contact-directions">
+       Thank you for requesting information on our program. We will be in touch with you shortly.
+     </p>
+
+   </div>
+   
+   <div class="col-md-4 col-sm-12 col-xs-12">
+     <div id="map" class="contact-map">
+     </div>
+     <div class="contact-location-info">
+       We are conveniently located at Nashoba Valley Olympia Ice Rink in Boxborough, MA just a few miles from I-495. <br><br>
+       Nashoba Valley Olympia<br>
+       34 Massachusetts Ave.<br>
+       Boxborough, MA 01719
+       </div>
+   </div>
+
+  </div>
+</div>
+
+
+
+<div style="clear: both;margin-bottom:40px;">
+</div>
+
+
+<div class="social-bar">
+  <div class="social-icons">
+  <a class="btn btn-social-icon btn-instagram" href="http://www.instagram.com/skatekostin" target="_blank"><span class="fa fa-instagram"></span></a>
+  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/skatekostin" target="_blank"><span class="fa fa-facebook"></span></a>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="footer-wrap">
+&copy; 2018 SkateKostin International
+</div>
+
+
+
+<script type="text/javascript">
+      function initMap() {
+        var rink = {lat: 42.4771574, lng: -71.4918};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: rink
+        });
+        var marker = new google.maps.Marker({
+          position: rink,
+          map: map
+        });
+      }
+
+      function submitFormFeedback() {
+        alert('Thank you for requesting information. We will be in touch shortly.');
+      }
+
+    </script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJJNydefxEjwaeLMU6lyFmYOf34y5lXv0&callback=initMap">
+    </script>
+
+</body>
+</html>
