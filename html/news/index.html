@@ -1,6 +1,9 @@
 <html>
 <head>
-<title>SkateKostin International</title>
+<title>SkateKostin International | News & Updates</title>
+<meta name="keywords" content="figure-skating, coaching, figure-skate">
+<meta name="description" content="SkateKostin International is an elite figure skating training program for all levels and ages located in Boxborough, MA. The SkateKostin program was developed by experienced elite level coaches to help each athlete meet their specific goals through progressive and comprehensive on and off ice training and development.">
+
 
 <link rel="shortcut icon" href="https://s3.us-east-2.amazonaws.com/ksi-images/home/favicon_square.png" type="image/x-icon"/>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,9 +15,8 @@
 
 
 <link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="../assets/stylesheets/site-small-device.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="../assets/stylesheets/site-medium-device.css">
-
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="../assets/stylesheets/site-small-device.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,13 +26,13 @@
 <body>
 
 <div class="container-fluid">
-  <div class="header-sub">
+  <div class="header-sub hidden-xs hidden-sm">
     <div class="logo">
-      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg" height="80px;" width="280px;">
+      <a href="../"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg" height="80px;" width="280px;"></a>
     </div>
-
+    
     <div class="menus-subpages" style="background: #fff;">
-      <ul>
+      <ul class="">
         <li><a href="../">Home</a></li>
         <li><a href="../about/">About</a></li>
         <li><a href="../team/">Our Team</a></li>
@@ -40,6 +42,43 @@
       </ul>
     </div>
   </div>
+
+
+  </div>
+</div>
+
+
+<div class="navbar-wrapper">
+<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top visible-xs-block visible-sm-block" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" style="background:#fff;height:80px;width:80px;float:right;" data-toggle="collapse" data-target="#navbar">
+	<span class="icon-bar" style="margin-top:8px;"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+      </button>
+
+      <div class="logo-nav-regular">
+	<a class="navbar-brand" href="/">
+	  <img alt="SkateKostin International" src="https://s3.us-east-2.amazonaws.com/ksi-images/home/SKI_LogoDark_280x80.jpg">
+	</a>
+      </div>
+    </div>
+    
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav" style="font-size:28px;line-height:34px;background:#fff;width:100%;">
+	<li><a href="../">Home</a></li>
+	<li><a href="../about/">About</a></li>
+	<li><a href="../team/">Our Team</a></li>
+	<li><a href="../program/">Our Program</a></li>
+	<li><a href="../news/" class="active no-hover">News & Updates</a></li>
+	<li><a href="../contact/" class="contact contact-hover no-hover">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
 </div>
 
 
@@ -64,7 +103,13 @@
    </div>
 
     <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="col-md-8 col-sm-12 col-xs-12 news-content">
+      <div class="col-md-7 col-sm-12 col-xs-12 news-content">
+	<p class="news-comp-label">
+	  2018 Polish Nationals
+	</p>
+	<p class="news-comp-results">
+	  Julia Kierul - Junior Ladies - 2nd
+	</p>
 	<p class="news-comp-label">
 	  2018 US Figure Skating Championships
 	</p>
@@ -98,7 +143,7 @@
 
 
 
-      <div class="col-md-4 col-sm-12 col-xs-12 news-images-carousel">
+      <div class="col-md-5 col-sm-12 col-xs-12 news-images-carousel">
 	<div id="nationals" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
 	  <li data-target="#nationals" data-slide-to="0" class="active"></li>
@@ -130,8 +175,8 @@
 	<h3 style="color:#970212;text-transform:uppercase;padding-top:20px;">Upcoming Events</h3>
       </div>
 
-      <div class="col-md-12 col-sm-12 col-xs-12" style="width:100%;margin-left:20px;">
-	<div style="width:200px;float:left;"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/colonial_open_logo.png" width="200"></div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+	<div class="event-img"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/colonial_open_logo.png" width="200"></div>
 	<div class="event-info">Boxborough, MA - May 18-20, 2018</div>
       </div>
     </div>
