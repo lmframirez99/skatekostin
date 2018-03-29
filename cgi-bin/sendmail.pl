@@ -43,7 +43,7 @@ warn("We're processing the mail");
 my $test = 1; 
 
   my %mail = ( To      => 'lmframirez@gmail.com',
-	       From    => 'skatekostininternational@gmail.com',
+	       From    => 'SkateKostin International <skatekostininternational@gmail.com>',
 	       Message => $message,
 	       Subject => "Information request from site"
            );
