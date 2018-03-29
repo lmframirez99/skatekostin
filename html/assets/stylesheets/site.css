@@ -103,6 +103,85 @@ textarea{
     transform: scaleX(1);
   }
 
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+    width: inherit;
+}
+
+.navbar-wrapper .navbar {
+    width: 100% !important;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.navbar-header {
+  float: none;
+  background: #fff;
+  height: 100px;
+  width:100%;
+}
+.navbar-left,.navbar-right {
+  float: none !important;
+  background: #fff;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 0px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 0px;
+  background: #fff;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+
+.navbar-nav {
+  float: none!important;
+  margin-top: 7.5px;
+}
+
+.navbar-nav>li {
+  float: none;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.3em;
+
+}
+
+.collapse.in{
+  display:block !important;
+}
+
+.navbar-brand {
+    padding: 5px 5px;
+    height:80px;
+    line-height:100px;
+}
+
+
 .menus-subpages ul{
     list-style-type: none;
     margin: 0 0 0 20px;
@@ -122,7 +201,7 @@ textarea{
     color: #a03a3a;
     text-align: center;
     text-transform: uppercase;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     position: relative;
   }
@@ -181,33 +260,6 @@ textarea{
 .menus-subpages li a.no-hover:hover:before{
     visibility: hidden;
   }
-
-.menus-subpages .icon {
-  display: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .menus-subpages li { padding: 0px; }
-  .menus-subpages li a { padding: 10px 10px; text-align: left; color: #000; width: 100%; margin: 0; }
-  .menus-subpages .icon {
-    float: left;
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .menus-subpages.responsive {position: relative;}
-  .menus-subpages .icon.responsive {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menus-subpages li a.responsive{
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 .navbar-sk{
   position: fixed;
@@ -460,7 +512,13 @@ textarea{
   }
 }
 
-
+.home-logo {
+    margin-top: 120px;
+    margin-left: 0px;
+    align: center;
+    margin-bottom: 60px;
+    height: 200px;
+}
 
 .banner-home{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skatesoriginal.jpg) no-repeat scroll left top;
@@ -472,7 +530,7 @@ textarea{
 }
 
 .banner-about{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice.JPG) no-repeat scroll left top;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice_web.JPG) no-repeat scroll left top;
   background-size: cover;
   padding: 0 20px;
   text-align: center;
@@ -483,7 +541,7 @@ textarea{
 }
 
 .banner-team{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left center;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink_web.jpg) no-repeat scroll left center;
   background-size: cover;
   padding: 0 60px;
   text-align: center;
@@ -501,6 +559,14 @@ textarea{
   z-index: -1;
 }
 
+.banner-program-video{
+  background-size:cover;
+  padding: 0 60px;
+  min-height:470px;
+  max-height: 470px;
+  z-index: -1;
+}
+
 .banner-program-test{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
   background-size: cover;
@@ -512,21 +578,28 @@ textarea{
 }
 
 video {
-  position: fixed;
-  top: 50%;
-  left: 40%;
-  min-width: 100%;
-  min-height: 400px;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-40%) translateY(-50%);
-  background-size: cover;
-  transition: 3s opacity;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    min-width: 100%;
+    min-height: 400px;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-40%) translateY(-50%);
+    background-size: cover;
+    transition: 3s opacity;
 }
 
+
+@media (-webkit-video-playable-inline) {
+    #video-photo-program img { display: none; }
+    #video-photo-program video { display: initial; }
+}
+
+
 .banner-news{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/medals.jpg) no-repeat scroll left center;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/medals_web.jpg) no-repeat scroll left center;
   background-size: cover;
   #background: #eee;
   padding: 60 60px;
@@ -555,7 +628,7 @@ video {
 }
 
 .usfsa-block{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg) no-repeat scroll left top;
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink_web.jpg) no-repeat scroll left top;
   background-size: cover;
   padding: 0;
   margin-top:10px;
@@ -689,6 +762,24 @@ video {
   padding-right: 40px;
 }
 
+.team-bio-name {
+  width: 100%;
+  font-size: 24px;
+}
+
+.team-bio-sergey {
+  width: 300px;
+  height: auto;
+}
+
+.team-bio-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: solid 1px #efefef;
+  overflow: hidden;
+}
+
 .team-bio{
     margin-top:50px;
 }
@@ -712,12 +803,52 @@ video {
     text-align: justify; 
 }
 
+.team-partner-description {
+    margin-top: 6px;
+}
+
 .team-partner p{
   margin-right: 10px;
   line-height: 1.8em;
   margin-top: 20px;
   text-align: justify;
 }
+
+.team-partner-name {
+  font-size:24px;
+}
+
+.team-partner-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.team-partner-contact-btn {
+  margin-top: 20px;
+  margin-bottom:30px;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+}
+
+hr.bio{
+  margin-top: 10px;
+  border: 0;
+  height: 2px;
+  background: #ccc; 
+  background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
+  background-image: -moz-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -ms-linear-gradient(left, #efefef, #ccc, #efefef);
+  background-image: -o-linear-gradient(left, #efefef, #ccc, #efefef);
+}
+
+
 
 .program-quote {
   margin-top: 100px;
@@ -741,7 +872,7 @@ video {
 
 .program-images-carousel {
   background: #fff;
-  height: 360px;
+  height: 370px;
   margin-top: 40px;
 }
 
@@ -871,14 +1002,21 @@ video {
 .program-image{
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 5px 10px #ccc;
+  box-shadow: 3px 3px #ccc;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  max-width: 300px;
   #max-width: 100%;
   #max-height: 100%;
 }
+
+.event-img {
+    width: 200px;
+    float: left;
+}
+
 
 .event-info {
   width: 300px;
