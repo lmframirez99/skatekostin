@@ -567,10 +567,10 @@ textarea{
   z-index: -1;
 }
 
-.banner-program-test{
-  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skates_clear.png) no-repeat scroll left center;
+.banner-program-alt{
+  background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/program/spin_class_web.jpg) no-repeat scroll right center;
   background-size: cover;
-  padding: 60 60px;
+  padding: 40 60px;
   text-align: center;
   min-height: 500px;
   max-height: 500px;
@@ -861,6 +861,19 @@ hr.bio{
   padding-top: 40px;
   padding-right: 40px;
 }
+
+.program-quote-small {
+  margin-top: 60px;
+  height: 360px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-size: 32px;
+  font-family: Futura;
+  text-align: left;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
 
 .program-content {
   font-size: 14px;
