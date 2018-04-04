@@ -44,7 +44,7 @@ warn("We're processing the mail");
 my $test = 1; 
 
   my %mail = ( To      => 'lmframirez@gmail.com',
-	       From    => 'SkateKostin International <skatekostininternational@gmail.com>',
+	       From    => 'SkateKostin International <info@skatekostin.com>',
 	       Message => $message,
 	       Subject => "Information request from site"
            );
@@ -56,7 +56,7 @@ sendmail(%mail) or $test = undef;
 my $test = 1; 
 
   my %mail = ( To      => 'ge.coulombe@yahoo.ca',
-	       From    => 'SkateKostin International <skatekostininternational@gmail.com>',
+	       From    => 'SkateKostin International <info@skatekostin.com>',
 	       Message => $message,
 	       Subject => "Information request from site"
            );
