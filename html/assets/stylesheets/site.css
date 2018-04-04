@@ -627,13 +627,50 @@ video {
   padding: 80px;
 }
 
-.usfsa-block{
+.usfsa-block-static{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink_web.jpg) no-repeat scroll left top;
   background-size: cover;
   padding: 0;
   margin-top:10px;
   min-height:260px;
   z-index: -1;
+}
+
+.usfsa-block{
+  background: #fff;
+  padding: 0;
+  margin-top:10px;
+  min-height:260px;
+  z-index: -1;
+}
+
+.home-images-carousel {
+  background: #fff;
+  height: 320px;
+  margin-top: 40px;
+}
+
+.home-image{
+  background: #fff;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: auto;
+  height: 300px;
+  max-height: 300px;
+}
+
+.carousel-indicators-home li {
+   list-style-type: none;
+}
+.carousel-indicators-home .active {
+}
+
+.carousel-control, .carousel-control.left, .carousel-control.right {
+  background-color: none;
+  background-image: none;
+  color: #efefef;
 }
 
 .home-partner-images{
@@ -889,6 +926,13 @@ hr.bio{
   margin-top: 40px;
 }
 
+.carousel-indicators-program li {
+   list-style-type: none;
+}
+.carousel-indicators-program .active {
+}
+
+
 .news-content {
   font-size: 14px;
   line-height: 1.8em;
@@ -1013,14 +1057,15 @@ hr.bio{
 }
 
 .program-image{
-  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 3px 3px #ccc;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  max-width: 300px;
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+  #max-width: 320px;
   #max-width: 100%;
   #max-height: 100%;
 }
