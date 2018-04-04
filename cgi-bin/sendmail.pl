@@ -65,7 +65,7 @@ my $test = 1;
 sendmail(%mail) or $test = undef;
 
 
-my $URL = "http://ec2-13-58-254-34.us-east-2.compute.amazonaws.com/contact/thankyou.html";
+my $URL = "http://www.skatekostin.com/contact/thankyou.html";
 
 unless ($test) {
     my $contact_url = $URL . "?error=email_not_sent";
