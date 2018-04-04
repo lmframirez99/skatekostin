@@ -263,7 +263,7 @@ h1{
   }
 
 
-.usfsa-block{
+.usfsa-block-static{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/rink_web.jpg) no-repeat scroll left top;
   background-size: cover;
   padding: 0;
@@ -271,6 +271,44 @@ h1{
   min-height:400px;
   z-index: -1;
 }
+
+.usfsa-block{
+  background: #fff;
+  padding: 0;
+  margin-top:10px;
+  min-height: 600px;
+  z-index: -1;
+}
+
+.home-images-carousel {
+  background: #fff;
+  height: 560px;
+  margin-top: 40px;
+}
+
+.home-image{
+  background: #fff;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: auto;
+  height: 560px;
+  max-height: 560px;
+}
+
+.carousel-indicators-home li {
+   list-style-type: none;
+}
+.carousel-indicators-home .active {
+}
+
+.carousel-control, .carousel-control.left, .carousel-control.right {
+  background-color: none;
+  background-image: none;
+  color: #efefef;
+}
+
 
 .banner-about{
   background: #fff url(https://s3.us-east-2.amazonaws.com/ksi-images/home/skate_off_ice_web.JPG) no-repeat scroll left top;
@@ -554,7 +592,7 @@ hr.bio{
 
 .program-images-carousel {
   background: #fff;
-  height: 500px;
+  height: 600px;
   margin-top: 20px;
 }
 
@@ -564,9 +602,9 @@ hr.bio{
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  max-width: 100%;
+  width: auto;
+  height: 500px;
   max-height: 500px;
-  #max-height: 100%;
 }
 
 .event-img {
@@ -803,6 +841,13 @@ hr.bio{
     margin-top:10px;
     font-size: 80px;
 }
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+}
+
 
 .btn-instagram {
   font-size: 42px;
