@@ -13,13 +13,19 @@
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="http://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="http://fonts.googleapis.com/css?family=Quicksand">
 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 
 <link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="../assets/stylesheets/site-medium-device.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="../assets/stylesheets/site-small-device.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+
+
 
 </head>
 
@@ -143,8 +149,8 @@
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12 program-images-carousel">
-	<div id="program-images" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
+	<div id="program-images" class="carousel slide" data-ride="carousel" style="background:#fff;">
+	  <ol class="carousel-indicators-program">
 	  <li data-target="#program-images" data-slide-to="0" class="active"></li>
 	  <li data-target="#program-images" data-slide-to="1"></li>
 	  <li data-target="#program-images" data-slide-to="2"></li>
@@ -184,10 +190,18 @@
 	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/program/dima_class_5_web.jpeg" height="400px;">
 	  </div>
 
-
 	</div>	
-      </div>
 
+	<a class="left carousel-control" href="#program-images" role="button" data-slide="prev">
+	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#program-images" role="button" data-slide="next">
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+
+      </div>
     </div> <!-- end of carousel side div -->
 
 
@@ -293,4 +307,18 @@
   // to capture IE10
     vidFade();
   }); 
+
+
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+
 </script>
