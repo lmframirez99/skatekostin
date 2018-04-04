@@ -40,9 +40,22 @@ my $message = "Information Request from Website\n\n" .
 
 
 warn("We're processing the mail");
+# Send a copy to me
 my $test = 1; 
 
   my %mail = ( To      => 'lmframirez@gmail.com',
+	       From    => 'SkateKostin International <skatekostininternational@gmail.com>',
+	       Message => $message,
+	       Subject => "Information request from site"
+           );
+
+  #sendmail(%mail) or die $Mail::Sendmail::error;
+sendmail(%mail) or $test = undef;
+
+# Send form to Genevieve
+my $test = 1; 
+
+  my %mail = ( To      => 'ge.coulombe@yahoo.ca',
 	       From    => 'SkateKostin International <skatekostininternational@gmail.com>',
 	       Message => $message,
 	       Subject => "Information request from site"
