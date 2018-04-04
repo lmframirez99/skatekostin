@@ -9,6 +9,8 @@
 
 <link rel="shortcut icon" href="https://s3.us-east-2.amazonaws.com/ksi-images/home/favicon_square.png" type="image/x-icon"/>
 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="http://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="http://fonts.googleapis.com/css?family=Quicksand">
@@ -20,6 +22,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 
 </head>
 
@@ -82,32 +86,59 @@
   <div class="col-xs-12 col-sm-12 col-md-4" style="background:#fff;border-left:1px solid #ccc;height:auto;">
 
 
-    <!--div id="homepage-carousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-	<li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
-	<li data-target="#homepage-carousel" data-slide-to="1"></li>
-	<li data-target="#homepage-carousel" data-slide-to="2"></li>
-	<li data-target="#homepage-carousel" data-slide-to="3"></li>
-      </ol>
-      
-      <div class="carousel-inner">	
-	<div class="item active">
-	  <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/rink.jpg">
-	</div>
-	<div class="item homepage-carousel-img">
-	  <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/Nationals1.jpg">
-	</div>
-	<div class="item">
-	  <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/Training.jpg">
-	</div>
-	<div class="item">
-	  <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/Nationals2.JPG">
-	</div>
-      </div>	
-    </div--> <!-- end of carousel side div -->
 
-    
-    <div class="usfsa-block"></div>
+
+      <div class="usfsa-block">
+
+      <div class="col-md-12 col-sm-12 col-xs-12 home-images-carousel">
+	<div id="home-images" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators-home">
+	  <li data-target="#home-images" data-slide-to="0" class="active"></li>
+	  <li data-target="#home-images" data-slide-to="1"></li>
+	  <li data-target="#home-images" data-slide-to="2"></li>
+	  <li data-target="#home-images" data-slide-to="3"></li>
+	  <li data-target="#home-images" data-slide-to="4"></li>
+	  <li data-target="#home-images" data-slide-to="5"></li>
+	  <li data-target="#home-images" data-slide-to="6"></li>
+	  </ol>
+	
+	<div class="carousel-inner">	
+	  <div class="item active home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/onice_hiphop_web.jpg" height="400px;">
+	  </div>
+	  <div class="item home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/team_challenge_web.jpg" height="400px;">
+	  </div>
+	  <div class="item home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/kk_class_web.jpg" height="400px;">
+	  </div>
+	  <div class="item home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/getup_web.jpg" height="400px;">
+	  </div>
+	  <div class="item home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/hiphop_web.jpg" height="400px;">
+	  </div>
+	  <div class="item home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/new_skater_web.jpg" height="400px;">
+	  </div>
+	  <div class="item home-image">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/home_images/olympics_sendoff_web.jpg" height="400px;">
+	  </div>
+	</div>	
+
+	<a class="left carousel-control" href="#home-images" role="button" data-slide="prev">
+	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#home-images" role="button" data-slide="next">
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+	
+	</div>
+      </div> <!-- end of carousel side div -->
+      </div> <!-- end of usfsa block -->
+
       <div class="home-partner-images">
 	<img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/usfsa_horizbw.jpg" class="home-usfsa-logo">
 	<img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/NVO-logo-snowflake-RESIZED.png" class="home-nvo-logo">
@@ -137,3 +168,20 @@
 
 </body>
 </html>
+
+
+<script>
+
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+
+</script>
