@@ -471,6 +471,14 @@ video {
   overflow: hidden;
 }
 
+.team-bio-img-kk {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: solid 1px #efefef;
+  overflow: hidden;
+}
+
 
 .team-bio{
     margin-top:20px;
@@ -639,22 +647,24 @@ hr.bio{
 
 .news-images-carousel {
   background: #fff;
-  width: 100%;
-  height: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 60px;
+  height: 1000px;
 }
 
 .news-image {
   text-align: center;
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  top: 80%;
+  left: 80%;
+  transform: translateX(-20%) translateY(-20%);
+  width: auto;
+  height: 1000px;
+  max-height: 1000px;
 }
 
 .news-photo {
-  height: auto;
+  height: 1000px;
 }
 
 .news-block {
@@ -846,6 +856,13 @@ hr.bio{
     width: 80px;
     height: 80px;
     font-size: 80px;
+}
+
+
+.contact-form-disclaimer {
+    font-size: 28px;
+    border-bottom:1px solid #ccc;
+    padding-bottom:20px;
 }
 
 
