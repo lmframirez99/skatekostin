@@ -817,6 +817,15 @@ video {
   overflow: hidden;
 }
 
+.team-bio-img-kk {
+  width: 320px;
+  height: auto;
+  margin-left: -10px;
+  border-radius: 10px;
+  border: solid 1px #efefef;
+  overflow: hidden;
+}
+
 .team-bio{
     margin-top:50px;
 }
@@ -950,13 +959,38 @@ hr.bio{
   margin-bottom: 20px;
 }
 
+.carousel-indicators-news li {
+   list-style-type: none;
+}
+.carousel-indicators-news .active {
+}
+
+
+.news-images-carousel {
+  background: #fff;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  height: 600px;
+}
+
+.news-image {
+  text-align: center;
+  overflow: hidden;
+  top: 80%;
+  left: 80%;
+  transform: translateX(-20%) translateY(-20%);
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
 .news-images {
   background: #fff;
   height: 500px;
 }
 
 .news-photo {
-  height: 400px;
+  height: 500px;
 }
 
 .contact-form {
@@ -1142,6 +1176,10 @@ hr.bio{
     padding-top:10px;
     font-size: 14px;
     color: #d0d0d0;
+}
+
+.contact-form-disclaimer {
+    font-size: 11px;
 }
 
 .glyphicon-instagram{
