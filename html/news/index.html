@@ -1,7 +1,18 @@
 <html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117108027-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117108027-1');
+</script>
+
+
 <title>SkateKostin International | News & Updates</title>
-<meta name="keywords" content="figure-skating, coaching, figure-skate">
+<meta name="keywords" content="skatekostin, figure-skating, coaching, figure-skate, figure skating program, massachusetts figure skating, elite figure skating, konstantin kostin, elite figure skating program, genevieve coulombe">
 <meta name="description" content="SkateKostin International is an elite figure skating training program for all levels and ages located in Boxborough, MA. The SkateKostin program was developed by experienced elite level coaches to help each athlete meet their specific goals through progressive and comprehensive on and off ice training and development.">
 
 
@@ -10,12 +21,13 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px) and (max-device-width: 976px) and (orientation: portrait)" href="http://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="http://fonts.googleapis.com/css?family=Quicksand">
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="http://fonts.googleapis.com/css?family=Quicksand">
+
 
 
 <link rel="stylesheet" type="text/css" href="../assets/stylesheets/site.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="../assets/stylesheets/site-medium-device.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px) and (max-device-width: 976px) and (orientation: portrait)" href="../assets/stylesheets/site-medium-device.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="../assets/stylesheets/site-small-device.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -103,7 +115,13 @@
    </div>
 
     <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="col-md-7 col-sm-12 col-xs-12 news-content">
+      <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 news-content">
+	<p class="news-comp-label">
+	  2018 North American Series - Skate Ontario Summer Skate
+	</p>
+	<p class="news-comp-results">
+	  Arianna Concepcion - Novice Ladies - 4th
+	</p>
 	<p class="news-comp-label">
 	  2018 Polish Nationals
 	</p>
@@ -111,7 +129,7 @@
 	  Julia Kierul - Junior Ladies - 2nd
 	</p>
 	<p class="news-comp-label">
-	  2018 US Figure Skating Championships
+	  2018 US Championships
 	</p>
 	<p class="news-comp-results">
 	  Arianna Concepcion - Intermediate Ladies - 3rd<br>
@@ -143,11 +161,12 @@
 
 
 
-      <div class="col-md-5 col-sm-12 col-xs-12 news-images-carousel">
-	<div id="nationals" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-	  <li data-target="#nationals" data-slide-to="0" class="active"></li>
-	  <li data-target="#nationals" data-slide-to="1"></li>
+      <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 news-images-carousel">
+	<div id="news-images" class="carousel slide" data-ride="carousel" style="background:#fff;">
+	  <ol class="carousel-indicators-news">
+	  <li data-target="#news-images" data-slide-to="0" class="active"></li>
+	  <li data-target="#news-images" data-slide-to="1"></li>
+	  <li data-target="#news-images" data-slide-to="2"></li>
 	  </ol>
 	
 	<div class="carousel-inner">	
@@ -161,9 +180,23 @@
 	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/Nationals2.JPG" class="news-photo">
 	    </p>
 	  </div>
+	  <div class="item news-image">
+	    <p style="margin-top:40px;">
+	      <img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/news/JuliaPolishNationals_web.jpeg" class="news-photo">
+	    </p>
+	  </div>
 	</div>	
-      </div>
 
+	<a class="news left carousel-control" href="#news-images" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="news right carousel-control" href="#news-images" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+	
+      </div>
     </div> <!-- end of carousel side div -->
 
 
@@ -176,8 +209,12 @@
       </div>
 
       <div class="col-md-12 col-sm-12 col-xs-12">
-	<div class="event-img"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/colonial_open_logo.png" width="200"></div>
-	<div class="event-info">Boxborough, MA - May 18-20, 2018</div>
+	<div class="event-img"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/news/2018BostonOpenLogo.jpg" width="200"></div>
+	<div class="event-info">Boston, MA - Sep 20-23, 2018</div>
+	<div style="margin-top:20px;"><hr></div>
+	<div class="event-img"><img src="https://s3.us-east-2.amazonaws.com/ksi-images/home/news/2019RegionalsLogo.jpeg" width="200"></div>
+	<div class="event-info">Boston, MA - Oct 11-14, 2018</div>
+
       </div>
     </div>
 
